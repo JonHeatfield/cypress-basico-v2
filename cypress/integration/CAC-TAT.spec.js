@@ -222,7 +222,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
                    
     })
 
-    it.only("Verifica a tela de politica de privacidade de forma idependente", function(){
+    it("Verifica a tela de politica de privacidade de forma idependente", function(){
         cy.visit('./src/privacy.html')
         cy.contains('CAC TAT - Política de privacidade').should("be.visible") 
         cy.screenshot()       
